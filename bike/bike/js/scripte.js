@@ -1,6 +1,7 @@
 $(document).ready(function (){
-	$('menu-icon').click(function (event){
-		$('.menu-icon, .menu__body').toggleClass('active');
-	});
+	document.querySelector('.menu-icon').onclick=function(){
+  		this.classList.toggle('active');
+  		$('.menu__body').classList.toggle('active');
+	}
 });
 
